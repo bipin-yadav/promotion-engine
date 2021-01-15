@@ -1,0 +1,12 @@
+spring:
+  application.name: promotion-engine-service
+  liquibase.enabled: true
+  jpa:
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+
+  datasource:
+    url: jdbc:h2:mem:public;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MSSQLServer;INIT=CREATE SCHEMA IF NOT EXISTS "public";
+    username: root
+    password:

@@ -1,0 +1,38 @@
+databaseChangeLog:
+  - changeSet:
+      id: create_table
+      author: dev
+      changes:
+        - createTable:
+            tableName: sku
+            columns:
+              - column:
+                  name: id
+                  type: char(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: sku_id
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: sku_price
+                  type: int
+                  constraints:
+                    nullable: false
+        - createTable:
+            tableName: promotion
+            columns:
+              - column:
+                  name: id
+                  type: char(36)
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: rule
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
