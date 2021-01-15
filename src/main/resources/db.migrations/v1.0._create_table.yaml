@@ -14,12 +14,12 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: sku_id
-                  type: varchar(255)
+                  type: varchar(10)
                   constraints:
                     nullable: false
               - column:
                   name: sku_price
-                  type: int
+                  type: double
                   constraints:
                     nullable: false
         - createTable:
@@ -32,7 +32,12 @@ databaseChangeLog:
                     primaryKey: true
                     nullable: false
               - column:
+                  name: sku_id
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
                   name: rule
-                  type: varchar(255)
+                  type: varchar(100)
                   constraints:
                     nullable: false

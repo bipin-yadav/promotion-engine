@@ -14,6 +14,9 @@ public class Promotion {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
 
+    @Column(name = "sku_id")
+    private String skuId;
+
     @Column(name = "rule")
     private String rule;
 
@@ -25,6 +28,14 @@ public class Promotion {
         this.id = id;
     }
 
+    public String getSkuId() {
+        return skuId;
+    }
+
+    public void setSkuId(String skuId) {
+        this.skuId = skuId;
+    }
+
     public String getRule() {
         return rule;
     }
@@ -32,4 +43,5 @@ public class Promotion {
     public void setRule(String rule) {
         this.rule = rule;
     }
+
 }

@@ -4,9 +4,9 @@ import java.util.List;
 
 public class RequestDto {
 
-    List<SkuDetails> details;
+    List<SkuDetail> details;
 
-    public static class SkuDetails {
+    public static class SkuDetail {
         private String skuId;
         private int quantity;
 
@@ -27,11 +27,11 @@ public class RequestDto {
         }
     }
 
-    public List<SkuDetails> getDetails() {
+    public List<SkuDetail> getDetails() {
         return details;
     }
 
-    public void setDetails(List<SkuDetails> details) {
+    public void setDetails(List<SkuDetail> details) {
         this.details = details;
     }
 }

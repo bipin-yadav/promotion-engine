@@ -13,5 +13,5 @@ import java.util.UUID;
  */
 @RepositoryRestResource(collectionResourceRel = "skus", path = "skus")
 public interface SkuRepository extends JpaRepository<Sku, UUID> {
-    List<Sku> findBySkuId(@Param("sku") String skuId);
+    Sku findBySkuId(@Param("skuId") String skuId);
 }
