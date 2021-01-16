@@ -65,7 +65,7 @@ class PromotionControllerTest {
                 .andExpect(status().isOk()).andReturn();
 
         String contentAsString = mvcResult.getResponse().getContentAsString();
-        assertEquals(contentAsString, "{\"total\":100.0}");
+        assertEquals("{\"total\":100.0}", contentAsString);
     }
 
     private void createSkuIds() throws Exception {
@@ -103,7 +103,7 @@ class PromotionControllerTest {
                 .andExpect(status().isOk()).andReturn();
 
         String contentAsString = mvcResult.getResponse().getContentAsString();
-        assertEquals(contentAsString, "{\"total\":370.0}");
+        assertEquals("{\"total\":370.0}", contentAsString);
     }
 
     @Test
@@ -138,7 +138,7 @@ class PromotionControllerTest {
                 .andExpect(status().isOk()).andReturn();
 
         String contentAsString = mvcResult.getResponse().getContentAsString();
-        assertEquals(contentAsString, "{\"total\":280.0}");
+        assertEquals("{\"total\":280.0}", contentAsString);
     }
 
     private void createPromotions() throws Exception {
